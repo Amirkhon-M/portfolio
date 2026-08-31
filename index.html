@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amirkhon Mahmadaminov — Aerospace Engineering Student</title>
+
+    <meta
+        name="description"
+        content="Portfolio of Amirkhon Mahmadaminov, an Aerospace Engineering student at New Uzbekistan University."
+    >
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: #fff;
+            color: #111;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: min(900px, calc(100% - 40px));
+            margin: 0 auto;
+        }
+
+        /* Navigation */
+
+        nav {
+            padding: 18px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        nav .container {
+            display: flex;
+            gap: 24px;
+            font-size: 0.95rem;
+        }
+
+        /* Hero */
+
+        header {
+            padding: 100px 0 90px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .profile-photo {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            display: block;
+            flex-shrink: 0;
+        }
+
+        header h1 {
+            margin: 0 0 8px;
+            font-size: clamp(2.4rem, 7vw, 4.5rem);
+            line-height: 1.05;
+            letter-spacing: -0.04em;
+        }
+
+        header .role {
+            margin: 0 0 12px;
+            font-size: 1.35rem;
+            color: #444;
+        }
+
+        header .university {
+            margin: 0;
+            color: #777;
+        }
+
+        /* Sections */
+
+        section {
+            padding: 75px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        section h2 {
+            margin: 0 0 28px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        /* About */
+
+        .about {
+            max-width: 720px;
+            font-size: 1.15rem;
+        }
+
+        /* Projects */
+
+        .projects {
+            display: grid;
+            gap: 28px;
+        }
+
+        .project {
+            border: 1px solid #ddd;
+            padding: 28px;
+        }
+
+        .project h3 {
+            margin: 0 0 8px;
+            font-size: 1.5rem;
+        }
+
+        .project .meta {
+            margin: 0 0 18px;
+            color: #777;
+            font-size: 0.95rem;
+        }
+
+        .project p {
+            margin: 0 0 18px;
+            max-width: 700px;
+        }
+
+        .project ul {
+            margin: 0 0 22px;
+            padding-left: 20px;
+        }
+
+        .project-link {
+            display: inline-block;
+            font-weight: 600;
+        }
+
+        /* Education */
+
+        .education {
+            font-size: 1.1rem;
+        }
+
+        .education strong {
+            display: block;
+            font-size: 1.3rem;
+            margin-bottom: 4px;
+        }
+
+        /* Contact */
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            font-size: 1.05rem;
+        }
+
+        /* Footer */
+
+        footer {
+            padding: 30px 0 50px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 600px) {
+
+            .container {
+                width: min(100% - 28px, 900px);
+            }
+
+            nav {
+                padding: 16px 0;
+            }
+
+            nav .container {
+                gap: 16px;
+                flex-wrap: wrap;
+            }
+
+            header {
+                padding: 60px 0 55px;
+            }
+
+            .hero {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            .profile-photo {
+                width: 100%;
+                max-width: 240px;
+                height: auto;
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+            }
+
+            header h1 {
+                font-size: clamp(2.2rem, 11vw, 3.5rem);
+                overflow-wrap: anywhere;
+            }
+
+            header .role {
+                font-size: 1.15rem;
+            }
+
+            section {
+                padding: 55px 0;
+            }
+
+            .about {
+                font-size: 1.05rem;
+            }
+
+            .project {
+                padding: 22px;
+            }
+
+            .project h3 {
+                font-size: 1.35rem;
+            }
+
+            .contact {
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <header>
+        <div class="container hero">
+
+            <img
+                src="photo.jpg"
+                alt="Amirkhon Mahmadaminov"
+                class="profile-photo"
+            >
+
+            <div>
+                <h1>Amirkhon Mahmadaminov</h1>
+
+                <p class="role">
+                    Aerospace Engineering Student
+                </p>
+
+                <p class="university">
+                    New Uzbekistan University · Class of 2030
+                </p>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section id="about">
+            <div class="container">
+
+                <h2>About</h2>
+
+                <p class="about">
+                    I'm an Aerospace Engineering student at New Uzbekistan University. 
+                    I enjoy solving problems, which is why I love physics and mathematics. 
+                    Outside of engineering, I enjoy running and cycling. 
+                    I like learning concepts deeply and sharing what I learn with the world.
+
+
+            </div>
+        </section>
+
+
+        <section id="projects">
+            <div class="container">
+
+                <h2>Projects</h2>
+
+                <div class="projects">
+
+                    <article class="project">
+
+                        <h3>The Last Walk Home</h3>
+
+                        <p class="meta">
+                            Lead Developer; Team size: 2
+                        </p>
+
+                        <p>
+                            A game I developed with a friend who worked
+                            as the 3D artist. I was responsible for the programming
+                            and integrating the different parts of the project
+                            into one complete game.
+                        </p>
+
+                        <ul>
+                            <li>Developed a dynamic JSON-based dialogue system with branching conversations and player choices</li>
+                            <li>Implemented a 3D interaction system using Godot's RayCast3D</li>
+                            <li>Integrated gameplay systems and assets into the final game</li>
+                        </ul>
+
+                        <a
+                            class="project-link"
+                            href="https://staticbleed.itch.io/the-last-walk-home"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View project →
+                        </a>
+
+                    </article>
+
+
+                    <article class="project">
+
+                        <h3>Learn With Amirkhon</h3>
+
+                        <p class="meta">
+                            Mathematics · Physics · Engineering
+                        </p>
+
+                        <p>
+                            A YouTube channel where I explain mathematics and
+                            physics concepts that I learn through my engineering
+                            curriculum, in my own words.
+                        </p>
+
+                        <a
+                            class="project-link"
+                            href="https://www.youtube.com/@learn_with_amirkhon"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Visit channel →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="education">
+            <div class="container">
+
+                <h2>Education</h2>
+
+                <div class="education">
+                    <strong>New Uzbekistan University</strong>
+                    Aerospace Engineering · Class of 2030
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <div class="container">
+
+                <h2>Contact</h2>
+
+                <div class="contact">
+
+                    <a href="mailto:amahmadaminov@icloud.com">
+                        amahmadaminov@icloud.com
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/amirkhon-uz/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="container">
+            © 2026 Amirkhon Mahmadaminov
+        </div>
+    </footer>
+
+</body>
+</html>
